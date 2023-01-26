@@ -1,7 +1,9 @@
 
 
-  
-    
+/*
+"container2" é o container referente
+a calculadora
+*/  
 .container2 {
     border-radius: 10%;
     display: flex;
@@ -15,10 +17,10 @@
     
     }
 
-    p{
-        font-size: 2.5vh;
-        margin: 10px;
-    }
+    /*
+"info" é referente ao bloco de instrução
+de a calculadora funciona
+*/  
 
     .info{
         display: flex;
@@ -32,17 +34,20 @@
         border-bottom-left-radius: 20%;
         
     }
+  
 
-    h2{
-        font-size: 4vh;
-        font-weight: bold;
-        margin: 10px;
-    }
+    /*
+estilização da mensagem de erro
+*/  
 
     .error-message{
         color: red;
         font-size: 2vh;
     }
+
+    /*
+estilização do container principal
+*/  
 
     .container {
         background-image: url('math.jpg');
@@ -51,6 +56,11 @@
         padding:9vh;
        
     }
+
+    /*
+"triangle" é referente a imagem
+do triangulo que aparece dentro da calculadora
+*/  
     
     .triangle {
     margin: 1vh;
@@ -62,11 +72,20 @@
     position: relative;
     }
 
-    .container_title{
+    /*
+essa estilização é utilizada para separar
+a div que esta a imagem do triangulo, e uma outra div
+que engloba os campos de input e label
+*/  
+
+    .container_bloco{
         display: flex;
         justify-content: space-between;
     }
 
+    /*
+    é utilizado para estilizar o titulo e o icone da calculadora 
+    */
     .title{
         display: flex;
         font-size: 15px;
@@ -74,7 +93,7 @@
         margin: 10px;
     }
 
-    .triangle2 {
+    .calculadora {
         width: 7.5vh;
         height: 7.5vh;
         display: flex;
@@ -83,12 +102,26 @@
         position: relative;
         }
     
+        /*
+        estilização para a div que engloba os campos de input e label
+        */
     .inputs {
         border-radius: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    }
+
+    p{
+        font-size: 2.5vh;
+        margin: 10px;
+    }
+
+    h2{
+        font-size: 4vh;
+        font-weight: bold;
+        margin: 10px;
     }
     
     label {

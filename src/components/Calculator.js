@@ -5,7 +5,7 @@ const Calculator = () => {
     const [hypotenuse, setHypotenuse] = useState('');
     const [cateto1, setCateto1] = useState('');
     const [cateto2, setCateto2] = useState('');
-    const [isCalculated, setIsCalculated] = useState(false);
+    const [isCalculated, setIsHipotenusa] = useState(false);
     const [isCatetosOposto, setIsCatetosOposto] = useState(false);
     const [isCatetosAdjacente, setIsCatetosAdjacente] = useState(false);
     const [hasError, setHasError] = useState(false);
@@ -14,7 +14,7 @@ const Calculator = () => {
         setHypotenuse('');
         setCateto1('');
         setCateto2('');
-        setIsCalculated(false);
+        setIsHipotenusa(false);
         setIsCatetosOposto(false);
         setIsCatetosAdjacente(false);
     }
@@ -68,7 +68,7 @@ const Calculator = () => {
             });
             const data = await response.json();
             setHypotenuse(data.hipotenusa);
-            setIsCalculated(true);
+            setIsHipotenusa(true);
                 }
                 }
                 return (
@@ -77,15 +77,15 @@ const Calculator = () => {
 
                         <div className='container2'>
 
-                        <div className='container_title'>
+                        <div className='container_bloco'>
                         <div className='title'>
                             <h2>Calculadora do Teorema de Pitágoras</h2>
                         </div>
                         <div className='title'>
-                            <img src={require('./calculadora.png')} className="triangle2" alt="triangle2" />
+                            <img src={require('./calculadora.png')} className="calculadora" alt="calculadora" />
                             </div>
                         </div>
-                        <div className='container_title'>
+                        <div className='container_bloco'>
                         <div>
                         <img src={require('./pitagoras.png')} className="triangle" alt="triangle" />
                         </div>
